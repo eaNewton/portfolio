@@ -1,0 +1,33 @@
+---
+plugins:
+  - react-hooks
+  - prettier
+extends:
+  - eslint:recommended
+  - prettier/react
+  - ./eslint/a11y.yml
+  - ./eslint/node.yml
+  - ./eslint/react.yml
+  - ./eslint/js.yml
+  - ./eslint/flow.yml
+  - ./eslint/import.yml
+settings:
+  react:
+    version: 'detect'
+parser: babel-eslint
+env:
+  es6: true
+  node: true
+  browser: true
+  jest: true
+globals:
+  mount: true
+  shallow: true
+  enableDeepSnapshots: true
+  ruleHelpers: true
+rules:
+  {
+    prettier/prettier: error,
+    'react-hooks/rules-of-hooks': 'error',
+    'import/max-dependencies': [0],
+  }
