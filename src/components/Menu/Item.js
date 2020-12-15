@@ -16,7 +16,7 @@ const MenuItem = (props: MenuItemPropsType): React$Node => {
       <NavLink activeClassName="active" exact to={itemUrl}>
         <div className={'menu-item'}>
           <img alt={itemTitle} className={itemClass} src={itemImgSrc} />
-          {itemTitle}
+          <span>{itemTitle}</span>
         </div>
       </NavLink>
     </li>

@@ -6,13 +6,15 @@ import App from '../App'
 
 import { routeCodes } from '../../constants/routes'
 
-import { LandingPage } from '../../pages/LandingPage'
+import { Home } from '../../pages/Home'
+import { Contact } from '../../pages/Contact'
 
 const Routes = () => {
   return (
     <App>
       <Switch>
-        <Route exact path={routeCodes.HOME} component={LandingPage} />
+        <Route exact path={routeCodes.HOME} component={Home} />
+        <Route exact path={routeCodes.CONTACT} component={Contact} />
       </Switch>
     </App>
   )

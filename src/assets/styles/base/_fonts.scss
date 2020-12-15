@@ -1,14 +1,16 @@
+@import url('https://fonts.googleapis.com/css2?family=Padauk:wght@400;700&display=swap');
+
 @font-face {
   font-family: 'Padauk';
   font-style: normal;
-  font-weight: normal;
+  font-weight: 400;
   src: local('Padauk'), local('Padauk'),
     url('../../fonts/Padauk-Regular.ttf') format('ttf');
 }
 @font-face {
-  font-family: 'Padauk';
+  font-family: 'Padauk-Bold';
   font-style: normal;
-  font-weight: bold;
+  font-weight: 700;
   src: local('Padauk Bold'), local('Padauk-Bold'),
     url('../../fonts/Padauk-Bold.ttf') format('ttf');
 }

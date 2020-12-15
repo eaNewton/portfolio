@@ -3,10 +3,10 @@ import React from 'react'
 
 import Layout from '../components/Layout'
 
-export const LandingPage = () => {
+export const Contact = () => {
   return (
     <Layout>
-      <h1>Whoo!</h1>
+      <h1>Contact</h1>
     </Layout>
   )
 }
