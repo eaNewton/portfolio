@@ -120,6 +120,14 @@ main {
   }
 }
 
+.switch-wrapper {
+  position: relative;
+}
+
+.switch-wrapper > div {
+  position: absolute;
+}
+
 .container {
   padding: 15px;
 }

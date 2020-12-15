@@ -1,6 +1,6 @@
 // @flow
 import React from 'react'
-import { Route, Switch } from 'react-router-dom'
+import { BrowserRouter as Router, Route, Switch } from 'react-router-dom'
 
 import App from '../App'
 
@@ -12,10 +12,12 @@ import { Contact } from '../../pages/Contact'
 const Routes = () => {
   return (
     <App>
-      <Switch>
-        <Route exact path={routeCodes.HOME} component={Home} />
-        <Route exact path={routeCodes.CONTACT} component={Contact} />
-      </Switch>
+      <Router>
+        <Switch>
+          <Route exact path={routeCodes.HOME} component={Home} />
+          <Route exact path={routeCodes.CONTACT} component={Contact} />
+        </Switch>
+      </Router>
     </App>
   )
 }
